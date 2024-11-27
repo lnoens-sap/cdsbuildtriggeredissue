@@ -1,0 +1,18 @@
+{
+    "_Type": "Action.Type.ODataService.UpdateEntity",
+    "Target": {
+        "EntitySet": "Products",
+        "Service": "/mymdkapplication/Services/cdsbuildtriggeredissueService.service",
+        "ReadLink": "{@odata.readLink}"
+    },
+    "Properties": {
+        "name": "#Control:name/#Value",
+        "price": "#Control:price/#Value"
+    },
+    "UpdateLinks": [],
+    "ActionResult": {
+        "_Name": "update"
+    },
+    "OnSuccess": "/mymdkapplication/Actions/UpdateEntitySuccessMessage.action",
+    "OnFailure": "/mymdkapplication/Actions/UpdateEntityFailureMessage.action"
+}

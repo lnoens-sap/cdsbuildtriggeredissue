@@ -1,0 +1,9 @@
+{
+    "Service": "/mymdkapplication/Services/cdsbuildtriggeredissueService.service",
+    "_Type": "Action.Type.ODataService.Initialize",
+    "ShowActivityIndicator": true,
+    "OnFailure": "/mymdkapplication/Actions/cdsbuildtriggeredissueService/Service/InitializeOnlineFailureMessage.action",
+    "ActionResult": {
+        "_Name": "init"
+    }
+}

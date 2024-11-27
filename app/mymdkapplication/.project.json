@@ -1,0 +1,54 @@
+{
+    "Credential": "cf",
+    "Template": {
+        "Id": "@ext-mdkvsc-npm-dev/generator-mdk",
+        "Name": "CRUD",
+        "Version": "0.0.1"
+    },
+    "CF": {
+        "Target": "",
+        "Organization": "",
+        "Space": "",
+        "Deploy": {
+            "Description": "mymdkapplication",
+            "WebClient": {
+                "Runtime": "preview",
+                "URL": ""
+            },
+            "Destination": [{
+                "CF": "cdsbuildtriggeredissue-app-srv",
+                "MDK": "../service/cdsbuildtriggeredissueService/",
+                "URL": ""
+            }]
+        }
+    },
+    "MobileService": {
+        "Type": "standard",
+        "AdminAPI": "",
+        "AppId": "lcap.cdsbuildtriggeredissue.mymdkapplication",
+        "Destination": []
+    },
+    "Onboarding": {
+        "Schema": "sapmobilesvcs",
+        "TimeZone": "UTC",
+        "URL": ""
+    },
+    "LCAP": {
+        "FullName": "MyMDKApplication",
+        "Service": [{
+            "mdk": "mymdkapplication/Services/cdsbuildtriggeredissueService.service",
+            "cap": {
+                "name": "cdsbuildtriggeredissueService",
+                "sourcePath": "srv/service.cds",
+                "path": "/service/cdsbuildtriggeredissueService/",
+                "entryPath": "/service/cdsbuildtriggeredissueService",
+                "destination": "cdsbuildtriggeredissue-app-srv",
+                "value": "0"
+            }
+        }],
+        "sourceTemplate": {
+            "id": "html5moduletemplates.basicSAPUI5ApplicationProjectModule",
+            "version": "1.40.12"
+        }
+    }
+}

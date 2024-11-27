@@ -1,0 +1,2 @@
+sap.ui.require(["sap/fe/test/JourneyRunner","cdsbuildtriggeredissue/mfeapplication/test/integration/FirstJourney","cdsbuildtriggeredissue/mfeapplication/test/integration/pages/ProductsList","cdsbuildtriggeredissue/mfeapplication/test/integration/pages/ProductsObjectPage"],function(e,i,t,s){"use strict";var e=new e({launchUrl:sap.ui.require.toUrl("cdsbuildtriggeredissue/mfeapplication")+"/index.html"});e.run({pages:{onTheProductsList:t,onTheProductsObjectPage:s}},i.run)});
+//# sourceMappingURL=opaTests.qunit.js.map

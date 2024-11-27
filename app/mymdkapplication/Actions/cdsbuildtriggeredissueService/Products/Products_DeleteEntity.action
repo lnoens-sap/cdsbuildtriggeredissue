@@ -1,0 +1,13 @@
+{
+    "Target": {
+        "EntitySet": "Products",
+        "Service": "/mymdkapplication/Services/cdsbuildtriggeredissueService.service",
+        "ReadLink": "{@odata.readLink}"
+    },
+    "OnSuccess": "/mymdkapplication/Actions/DeleteEntitySuccessMessage.action",
+    "OnFailure": "/mymdkapplication/Actions/DeleteEntityFailureMessage.action",
+    "ActionResult": {
+        "_Name": "delete"
+    },
+    "_Type": "Action.Type.ODataService.DeleteEntity"
+}

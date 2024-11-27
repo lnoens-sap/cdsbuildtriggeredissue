@@ -1,0 +1,17 @@
+{
+    "CreateLinks": [],
+    "OnFailure": "/mymdkapplication/Actions/CreateEntityFailureMessage.action",
+    "OnSuccess": "/mymdkapplication/Actions/CreateEntitySuccessMessage.action",
+    "Properties": {
+        "name": "#Control:name/#Value",
+        "price": "#Control:price/#Value"
+    },
+    "Target": {
+        "EntitySet": "Products",
+        "Service": "/mymdkapplication/Services/cdsbuildtriggeredissueService.service"
+    },
+    "ActionResult": {
+        "_Name": "create"
+    },
+    "_Type": "Action.Type.ODataService.CreateEntity"
+}

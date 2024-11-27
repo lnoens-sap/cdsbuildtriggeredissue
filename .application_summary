@@ -1,0 +1,5 @@
+{
+  "ProjectOverviewURL": "https://fusion9b9dwtj-71zg49r7.launchpad.cfapps.us10.hana.ondemand.com/lcapcdsbuildtriggeredissue.cdsbuildtriggeredissueLaunchpad-1.0.0/",
+  "DeployedUTCTime": "2024-11-27T09:02:55.595Z",
+  "ApplicationLogURL": "https://logs.cf.us10-001.hana.ondemand.com/app/dashboards#/view/Overview?_g=(filters:!((query:(match_phrase:(component_name:cdsbuildtriggeredissue-srv)))))"
+}
